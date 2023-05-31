@@ -1,7 +1,8 @@
 local M = {}
 
 M.servers = {
-  "pyright"
+  "pyright",
+  "sqlls"
 }
 
 return M
