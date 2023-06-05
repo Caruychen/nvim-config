@@ -31,3 +31,10 @@ keymap("n", "<leader>xq", "<cmd>TroubleToggle quickfix<cr>",
 keymap("n", "gR", "<cmd>TroubleToggle lsp_references<cr>",
   {silent = true, noremap = true}
 )
+
+vim.g.tmux_navigator_no_mappings = 1
+-- Vim-tmux navigator keymaps
+keymap("n", "<C-h>", "<cmd>TmuxNavigateLeft<CR>", opts)
+keymap("n", "<C-l>", "<cmd>TmuxNavigateRight<CR>", opts)
+keymap("n", "<C-j>", "<cmd>TmuxNavigateDown<CR>", opts)
+keymap("n", "<C-k>", "<cmd>TmuxNavigateUp<CR>", opts)
